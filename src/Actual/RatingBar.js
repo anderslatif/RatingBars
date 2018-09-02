@@ -8,7 +8,7 @@ export default class RatingBar extends Component {
   /*static propTypes = {
     rating: PropTypes.number.isRequired,
     highestPossibleRating: PropTypes.number.isRequired,
-    color: PropTypes.string,
+    color: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   };*/
@@ -16,8 +16,8 @@ export default class RatingBar extends Component {
   createRatingBars() {
     let ratingBars = [];
     const rating = this.props.rating;
-    const barHeight = this.props.height ? Number(this.props.height) : 16;
-    const barWidth = this.props.width ? Number(this.props.width) : 4;
+    const barHeight = this.props.height ? parseInt(this.props.height) : 32;
+    const barWidth = this.props.width ? parseInt(this.props.width) : 8;
 
     for (let i = 0; i < this.props.highestPossibleRating; i++) {
       const key = 'rating' + i;
