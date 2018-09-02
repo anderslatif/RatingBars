@@ -1,0 +1,30 @@
+.RatingBar {
+    display: inline-block;
+}
+
+.rating-bar {
+    background-color: #00e676;
+    display: inline-block;
+    height: 16px;
+    margin-right: 2px;
+    width: 4px;
+}
+
+.full-bar {
+    border-radius: 1px;
+}
+
+.semi-bar-top {
+    border-radius: 1px 0 0 1px;
+    position: absolute;
+}
+
+.semi-bar-bottom {
+    border-radius: 0 1px 1px 0;
+}
+
+p {
+    display: inline-block;
+    padding-left: 8px;
+}
+  
