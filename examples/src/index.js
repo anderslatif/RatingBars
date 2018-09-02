@@ -1,10 +1,9 @@
 import React from 'react';
-import { render } from 'react-dom';
-//import RatingBar from '../../src/RatingBar.js';
+import { render} from 'react-dom';
+import App from '../../src';
 
-const App = () => {
-    <h1>Hello from My Component</h1>
-}
-//     <RatingBar rating={2} highestPossibleRating={10} />
+const DemoApp = () => (
+    <App />
+);
 
-render(<App />, document.getElementById("root"));
+render(<DemoApp />, document.getElementById("root"));

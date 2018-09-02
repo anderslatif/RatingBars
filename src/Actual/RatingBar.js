@@ -1,20 +1,17 @@
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
-import './RatingBar.css';
+//import './RatingBar.css';
 
 export default class RatingBar extends Component {
-  static contextTypes = {
-    httpClient: PropTypes.object.isRequired
-  };
 
-  static propTypes = {
+  /*static propTypes = {
     rating: PropTypes.number.isRequired,
     highestPossibleRating: PropTypes.number.isRequired,
     color: PropTypes.string,
     height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     width: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-  };
+  };*/
 
   createRatingBars() {
     let ratingBars = [];
@@ -86,14 +83,12 @@ export default class RatingBar extends Component {
   }
 
   render() {
-    const { t } = this.props;
-
     const ratingBarsHTML = this.createRatingBars();
 
     return (
       <div className="RatingBar">
         {ratingBarsHTML}
-        <p>{this.props.rating}</p>
+        <p className="rating-number">{this.props.rating}</p>
       </div>
     );
   }

@@ -1,8 +1,10 @@
 import React from 'react';
-import RatingBarImpl from './RatingBar.js';
+import './styles.css';
+import RatingBar from './Actual/RatingBar'
 
-const RatingBar = () => {
-    <RatingBarImpl/>
-}
-
-export default RatingBar;
+const App = () => (
+    <div>
+        <RatingBar rating={3} highestPossibleRating={10}/>
+    </div>
+);
+export default App;
