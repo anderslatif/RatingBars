@@ -1,5 +1,5 @@
 {
-  "name": "ratingbars",
+  "name": "react-ratingbars",
   "version": "1.0.0",
   "description": "A visual component for React",
   "main": "index.js",
